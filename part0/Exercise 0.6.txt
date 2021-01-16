@@ -1,0 +1,10 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa [{content: "1", date: "2021-01-16T21:26:46.499Z"}]
+server-->browser: HTTP status code 201 (No redirect)
+
+note over browser:
+browser executes the event handler
+that renders notes to display.
+The event handler immediately prevents
+the default handling of form submit
+(GET request).
+end note
